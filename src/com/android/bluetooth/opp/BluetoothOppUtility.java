@@ -432,6 +432,8 @@ public class BluetoothOppUtility {
         } catch (IOException ex) {
             Log.e(TAG, "Error while accessing file", ex);
             return false;
+        }
+    }
 
     // Custom class to remove special characters from Intent.toString()
     static class CustomIntent extends Intent {

@@ -251,7 +251,7 @@ public class BluetoothOppManager {
     }
 
     public void saveSendingFileInfo(String mimeType, String uriString, boolean isHandover,
-            boolean fromExternal) throws IllegalArgumentException {
+            boolean fromExternal) {
         synchronized (BluetoothOppManager.this) {
             mMultipleFlag = false;
             mMimeTypeOfSendingFile = mimeType;
@@ -266,8 +266,8 @@ public class BluetoothOppManager {
         }
     }
 
-    public void saveSendingFileInfo(String mimeType, ArrayList<Uri> uris, boolean isHandover
-	    boolean fromExternal) throws IllegalArgumentException {
+    public void saveSendingFileInfo(String mimeType, ArrayList<Uri> uris, boolean isHandover,
+	    boolean fromExternal) {
         synchronized (BluetoothOppManager.this) {
             mMultipleFlag = true;
             mMimeTypeOfSendingFiles = mimeType;
